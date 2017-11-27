@@ -1,2 +1,0 @@
-# glassy
-project
