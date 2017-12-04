@@ -30,23 +30,36 @@
                         </g>
                     </svg>
                 </a>
-                <a href="catalog.html">Каталог</a>
+                <a href="catalog.html" class="link-dropdown-menu">Каталог</a>
                 <a href="#">Доставка и оплата</a>
                 <a href="#">О Компании</a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-menu-item">Новинки</a>
+                    <a href="#" class="dropdown-menu-item">Сливочное</a>
+                    <a href="#" class="dropdown-menu-item">Щербеты</a>
+                    <a href="#" class="dropdown-menu-item">Фруктовый лед</a>
+                    <a href="#" class="dropdown-menu-item">Мелорин</a>
+                </div>
             </nav>
             <div class="right-menu">
                 <button class="btn search"></button>
                 <button class="btn login">Вход</button>
                 <a href="#" class="btn basket">Пусто</a>
+                <div class="info-wrp">
+                    <p>С 10 до 20, ежедневно</p>
+                    <a href="tel:88124502525">8 812 450-25-25</a>
+                </div>
+                <div class="search-form">
+                    <form action="">
+                        <input type="text" placeholder="Что ищем?">
+                    </form>
+                    
+                </div>
             </div>
         </div>
     </header>
     <main>
         <div class="container">
-            <div class="info-wrp">
-                <p>С 10 до 20, ежедневно</p>
-                <a href="tel:88124502525">8 812 450-25-25</a>
-            </div>
             <div class="slider">
                 <div class="slider-item">
                     <h1>Крем-брюле и пломбир с малиновым джемом</h1>
@@ -62,7 +75,7 @@
                 <input type="radio" name="slider" id="slider3">
                 <a href="#" class="btn-link">Давайте оба!</a>
             </div>
-            <div class="flex bnr">
+            <div class="flex promo">
                 <div class="promo-block">
                     <h2>Малинка даром!</h2>
                     <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -75,31 +88,31 @@
                 </div>
             </div>
             <div class="catalog">
-                <div class="hit">
+                <div class="hit-item">
                     <div class="catalog-item">
                         <img src="#" alt="">
-                        <span>310/кг</span>
+                        <span>310 &#8381; /кг</span>
                     </div>
                     <a href="#" class="item-description">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                 </div>
-                <div class="hit">
+                <div class="hit-item">
                     <div class="catalog-item">
                         <img src="#" alt="">
-                        <span>380/кг</span>
+                        <span>380 &#8381; /кг</span>
                     </div>
                     <a href="#" class="item-description">Сливочно-кофейное с кусочками шоколада</a>
                 </div>
-                <div class="hit">
+                <div class="hit-item">
                     <div class="catalog-item">
                         <img src="#" alt="">
-                        <span>355/кг</span>
+                        <span>355 &#8381; /кг</span>
                     </div>
                     <a href="#" class="item-description">Сливочно-клубничное с присыпкой из белого шоколада</a>
                 </div>
-                <div class="hit">
+                <div class="hit-item">
                     <div class="catalog-item">
                         <img src="#" alt="">
-                        <span>415/кг</span>
+                        <span>415 &#8381; /кг</span>
                     </div>
                     <a href="#" class="item-description">Сливочное крем-брюле с карамельной подливкой</a>
                 </div>
@@ -117,12 +130,12 @@
                         растаять в пути и позволяет сохранить превосходный вкус.</li>
                 </ul>
             </div>
-            <div class="flex bnr">
+            <div class="flex banner">
                 <div class="news">
-                    <article>
+                    <section>
                         <p>Новое в нашем блоге</p>
                         <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
-                    </article>
+                    </section>
                 </div>
                 <div class="form">
                     <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
@@ -134,7 +147,17 @@
                 </div>
             </div>
         </div>
-        <div id="map" style="height: 300px;"></div>
+        <div id="map" style="height: 300px;">
+            <div class="feedback">
+                <p>Адрес главного офиса и офлайн-магазина:</p>
+                <h4>ул. Большая Конюшенная 19/8, Санкт-Петербург</h4>
+                <p>Для заказов по телефону:<br>
+                <span>8 812 450-25-25</span>
+                    (с 10 до 20 ежедневно)
+                </p>
+                <button class="btn-link">Форма обратной связи</button>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="flex container">
@@ -164,5 +187,4 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQ5MEUCW28ObaBxdGg-oqPEjtYkjcDLTw&callback=initMap" async
     defer></script>
 </body>
-
 </html>
