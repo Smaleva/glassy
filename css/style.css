@@ -1,0 +1,64 @@
+* {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    line-height: calc(18/16);
+    color: #fff;
+    background: #869f91;
+    position: relative;
+}
+.container {
+    min-width: 900px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.slider, .promo, .catalog, .info-wrapper, .banner {
+    width: 100%;
+}
+.left-menu, .right-menu, .promo-block, .news, .form, .advantage-item {
+    width: 50%;
+}
+.social, .footer-menu, .copyright {
+    width: 33.333333%;
+}
+.catalog-item, .social-btn-link, .footer-menu-item {
+    width: 25%;
+}
+.info-wrapper {
+    color: #323232;
+    padding: 30px 20px;
+    background: url("./img/vaflya-back.jpg");
+}
+.advantages-wrp {
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+.advantage-item {
+    float: left;
+}
+.promo-block, .info-wrapper, .news, .form, .feedback {
+    border-radius: 20px;
+}
+.promo div, .news {
+    padding: 20px;
+}
+.promo-block:first-child {
+    background: url("./img/promo-back1.png") no-repeat;
+}
+.promo-block:last-child {
+    background: url("./img/test.jpg");
+}
+.news {
+    background: url("./img/news-back.png") no-repeat;
+}
