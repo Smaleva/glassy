@@ -15,7 +15,7 @@
 <body>
     <header>
         <div class="flex container">
-            <nav class="left-menu">
+            <nav class="flex left-menu">
                 <a href="/">
                     <svg xmlns="http://www.w3.org/2000/svg" width="154" height="64" viewBox="0 0 154 64">
                         <g fill="#FFF">
@@ -41,19 +41,20 @@
                     <a href="#" class="dropdown-menu-item">Мелорин</a>
                 </div>
             </nav>
-            <div class="right-menu">
-                <button class="btn search"></button>
-                <button class="btn login">Вход</button>
-                <a href="#" class="btn basket">Пусто</a>
+            <div class="flex right-menu">
+                <div class="modal-group">
+                    <button class="btn search"></button>
+                    <button class="btn login">Вход</button>
+                    <button class="btn basket">Пусто</button>  
+                </div>
                 <div class="info-wrp">
                     <p>С 10 до 20, ежедневно</p>
                     <a href="tel:88124502525">8 812 450-25-25</a>
                 </div>
                 <div class="search-form">
-                    <form action="">
+                    <form action="search" method="get" name="search-panel">
                         <input type="text" placeholder="Что ищем?">
                     </form>
-
                 </div>
             </div>
         </div>

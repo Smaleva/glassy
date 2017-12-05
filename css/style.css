@@ -25,7 +25,7 @@ body {
 .slider, .promo, .catalog, .info-wrapper, .banner {
     width: 100%;
 }
-.left-menu, .right-menu, .promo-block, .news, .form, .advantage-item {
+.promo-block, .news, .form, .advantage-item {
     width: 50%;
 }
 .social, .footer-menu, .copyright {
@@ -61,4 +61,34 @@ body {
 }
 .news {
     background: url("./img/news-back.png") no-repeat;
+}
+.dropdown-menu, .search-form {
+    display: none;
+}
+.right-menu {
+    flex-direction: column;
+    align-items: flex-end;
+    width: 40%;
+    text-align: right;
+}
+.info-wrp {
+    text-align: right;
+}
+.left-menu a:first-child {
+    padding: 9px 0 0 0;
+}
+.left-menu a {
+    display: inline-block;
+    padding: 30px 27px;
+    color: #fff;
+    cursor: pointer;
+}
+.modal-group button {
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    background: #b8d1c3, transparent;
+    margin: 30px 10px;
+    color: #fff;
 }
