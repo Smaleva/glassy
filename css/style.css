@@ -43,7 +43,7 @@ a {
     padding: 30px 20px;
     background: url("./img/vaflya-back.jpg");
 }
-.advantages-wrp {
+.advantages-wrapper {
     padding: 0;
     list-style: none;
     display: inline-block;
@@ -61,7 +61,7 @@ a {
     background: url("./img/promo-back1.png") no-repeat;
 }
 .promo-block:last-child {
-    background: url("./img/test.jpg");
+    background: url("./img/promo-back2.png") no-repeat;
 }
 .news {
     background: url("./img/news-back.png") no-repeat;
@@ -71,6 +71,7 @@ a {
 }
 .slider-item:first-child {
     display: block;
+    background: url("./img/slider-item1.png") no-repeat;
 }
 .right-menu {
     flex-direction: column;
@@ -78,7 +79,7 @@ a {
     width: 40%;
     text-align: right;
 }
-.info-wrp {
+.info {
     text-align: right;
 }
 .left-menu a:first-child {
