@@ -45,7 +45,7 @@
                 <div class="modal-group">
                     <button class="btn search"></button>
                     <button class="btn login">Вход</button>
-                    <button class="btn basket">Пусто</button>  
+                    <button class="btn basket">Пусто</button>
                 </div>
                 <div class="info">
                     <p>С 10 до 20, ежедневно</p>
@@ -131,11 +131,13 @@
                     </section>
                 </div>
                 <div class="form">
-                    <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
-                        Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-                    <div class="form-wrp">
-                        <input type="email" name="email" id="email" placeholder="Электронная почта">
-                        <button type="submit" class="btn-link">Отправить</button>
+                    <div class="subscribe">
+                        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
+                            Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+                        <form action="/mail" method="post" class="subscribe-form">
+                            <input type="email" name="email" id="email" placeholder="Электронная почта">
+                            <button type="submit" class="btn-link">Отправить</button>
+                        </form>
                     </div>
                 </div>
             </div>
