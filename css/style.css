@@ -56,8 +56,11 @@ a {
 .promo-block, .info-wrapper, .news, .form, .feedback, .subscribe {
     border-radius: 20px;
 }
-.promo div, .news {
+.promo-block, .news {
     padding: 20px;
+}
+.promo-block {
+    position: relative;
 }
 .promo-block:first-child {
     background: url("./img/promo-back1.png") no-repeat;
