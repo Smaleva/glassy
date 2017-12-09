@@ -1,0 +1,190 @@
+.Корзина2, .Корова, .Листик, .Лупа, .Лупа1, .Мороженко, .Сердце, .Твитер, .ФБ, .Х, .ХИТ, ._, ._1, .ВК, .Вход, .Вход1, .Градусник, .Инста, .Корзина, .checkbox-off, .checkbox-off-1, .checkbox-off-2, .checkbox-on, .checkbox-on-1, .checkbox-on-2, .radio-off, .radio-off-1, .radio-off-2, .radio-on, .radio-on-1, .radio-on-2{
+	background: url(sprites.png) no-repeat;
+}
+
+.Корзина2{
+	background-position: 0 -77px ;
+	width: 21px;
+	height: 20px;
+}
+
+.Корова{
+	background-position: -272px -213px ;
+	width: 49px;
+	height: 49px;
+}
+
+.Листик{
+	background-position: -272px -335px ;
+	width: 49px;
+	height: 49px;
+}
+
+.Лупа{
+	background-position: 0 -154px ;
+	width: 17px;
+	height: 17px;
+}
+
+.Лупа1{
+	background-position: 0 -186px ;
+	width: 17px;
+	height: 17px;
+}
+
+.Мороженко{
+	background-position: -272px 0;
+	width: 49px;
+	height: 49px;
+}
+
+.Сердце{
+	background-position: -78px -96px ;
+	width: 15px;
+	height: 13px;
+}
+
+.Твитер{
+	background-position: 0 -281px ;
+	width: 38px;
+	height: 38px;
+}
+
+.ФБ{
+	background-position: 0 -336px ;
+	width: 38px;
+	height: 38px;
+}
+
+.Х{
+	background-position: -73px -178px ;
+	width: 11px;
+	height: 11px;
+}
+
+.ХИТ{
+	background-position: -63px -10px ;
+	width: 61px;
+	height: 61px;
+}
+
+._{
+	background-position: -87px -135px ;
+	width: 9px;
+	height: 14px;
+}
+
+._1{
+	background-position: -57px -135px ;
+	width: 9px;
+	height: 14px;
+}
+
+.ВК{
+	background-position: 0 -392px ;
+	width: 38px;
+	height: 38px;
+}
+
+.Вход{
+	background-position: 0 0;
+	width: 21px;
+	height: 19px;
+}
+
+.Вход1{
+	background-position: 0 -38px ;
+	width: 21px;
+	height: 19px;
+}
+
+.Градусник{
+	background-position: -274px -95px ;
+	width: 49px;
+	height: 49px;
+}
+
+.Инста{
+	background-position: 0 -227px ;
+	width: 38px;
+	height: 38px;
+}
+
+.Корзина{
+	background-position: 0 -116px ;
+	width: 21px;
+	height: 20px;
+}
+
+.checkbox-off{
+	background-position: -122px -315px ;
+	width: 20px;
+	height: 20px;
+}
+
+.checkbox-off-1{
+	background-position: -120px -260px ;
+	width: 20px;
+	height: 20px;
+}
+
+.checkbox-off-2{
+	background-position: -132px -105px ;
+	width: 20px;
+	height: 20px;
+}
+
+.checkbox-on{
+	background-position: -127px -151px ;
+	width: 24px;
+	height: 20px;
+}
+
+.checkbox-on-1{
+	background-position: -125px -201px ;
+	width: 24px;
+	height: 20px;
+}
+
+.checkbox-on-2{
+	background-position: -5px -451px ;
+	width: 24px;
+	height: 20px;
+}
+
+.radio-off{
+	background-position: -75px -453px ;
+	width: 22px;
+	height: 22px;
+}
+
+.radio-off-1{
+	background-position: -74px -418px ;
+	width: 22px;
+	height: 22px;
+}
+
+.radio-off-2{
+	background-position: -74px -377px ;
+	width: 22px;
+	height: 22px;
+}
+
+.radio-on{
+	background-position: -72px -334px ;
+	width: 22px;
+	height: 22px;
+}
+
+.radio-on-1{
+	background-position: -70px -281px ;
+	width: 22px;
+	height: 22px;
+}
+
+.radio-on-2{
+	background-position: -71px -232px ;
+	width: 22px;
+	height: 22px;
+}
+
