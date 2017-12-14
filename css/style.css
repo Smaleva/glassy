@@ -94,7 +94,7 @@ h2 {
 }
 .promo-block a {
     left: 69%;
-    bottom: 0;
+    bottom: -40px;
 }
 .promo-block p {
     margin: 18px 0;
