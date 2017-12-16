@@ -247,13 +247,5 @@ h2 {
 .footer-menu-item:first-child {
     position: relative;
     padding: 0 0 0 20px;
-}
-.footer-menu-item::before {
-    content: "";
-    position: absolute;
-    width: 15px;
-    height: 13px;
-    top: 0;
-    left: 0;
     background: url('./img/sprites.png') -78px -96px no-repeat;
 }
