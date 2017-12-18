@@ -44,6 +44,9 @@ h2 {
 .social, .footer-menu, .copyright {
     width: 33.333333%;
 }
+.catalog, .filter {
+    flex-wrap: wrap;
+}
 .catalog-item {
     position: relative;
     padding: 0 10px;
