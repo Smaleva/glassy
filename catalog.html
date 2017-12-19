@@ -30,8 +30,6 @@
                     </svg>
                 </a>
                 <a href="catalog.html" class="link-dropdown-menu">Каталог</a>
-                <a href="#">Доставка и оплата</a>
-                <a href="#">О Компании</a>
                 <div class="dropdown-menu">
                     <a href="#" class="dropdown-menu-item">Новинки</a>
                     <a href="#" class="dropdown-menu-item">Сливочное</a>
@@ -39,6 +37,8 @@
                     <a href="#" class="dropdown-menu-item">Фруктовый лед</a>
                     <a href="#" class="dropdown-menu-item">Мелорин</a>
                 </div>
+                <a href="#">Доставка и оплата</a>
+                <a href="#">О Компании</a>
             </nav>
             <div class="flex right-menu">
                 <div class="modal-group">
@@ -85,7 +85,13 @@
                         <form action="/catalog/" method="get">
                             <fieldset>
                                 <legend class="title-wrapper">Цена: от 100 руб. - 500 руб.</legend>
-
+                                <div class="scale-wrapper">
+                                    <div class="scale">
+                                        <div class="bar"></div>
+                                    </div>
+                                    <a href="#" class="range-toggle min"></a>
+                                    <a href="#" class="range-toggle max"></a>
+                                </div>
                             </fieldset>
                         </form>
                     </div>
@@ -93,20 +99,14 @@
                         <form action="/catalog/" method="get">
                             <fieldset>
                                 <legend class="title-wrapper">Жирность:</legend>
-                                <div class="checkbox-item">
-                                    <input type="checkbox" id="ch1">
+                                <div class="radio-group">
+                                    <input type="radio" id="ch1">
                                     <label for="ch1">0%</label>
-                                </div>
-                                <div class="checkbox-item">
-                                    <input type="checkbox" id="ch2" checked>
+                                    <input type="radio" id="ch2" checked>
                                     <label for="ch2">до 10%</label>
-                                </div>
-                                <div class="checkbox-item">
-                                    <input type="checkbox" id="ch3">
+                                    <input type="radio" id="ch3">
                                     <label for="ch3">до 30%</label>
-                                </div>
-                                <div class="checkbox-item">
-                                    <input type="checkbox" id="ch4">
+                                    <input type="radio" id="ch4">
                                     <label for="ch4">выше 30%</label>
                                 </div>
                             </fieldset>
@@ -116,23 +116,15 @@
                         <form method="get" action="/catalog/">
                             <fieldset>
                                 <legend class="title-wrapper">Наполнители:</legend>
-                                <div class="checkbox-item">
+                                <div class="checkbox-group">
                                     <input type="checkbox" id="ch5" checked>
                                     <label for="ch5">шоколадные</label>
-                                </div>
-                                <div class="checkbox-item">
                                     <input type="checkbox" id="ch6" checked>
                                     <label for="ch6">сахарные присыпки</label>
-                                </div>
-                                <div class="checkbox-item">
                                     <input type="checkbox" id="ch7">
                                     <label for="ch7">фрукты</label>
-                                </div>
-                                <div class="checkbox-item">
                                     <input type="checkbox" id="ch8">
                                     <label for="ch8">сиропы</label>
-                                </div>
-                                <div class="checkbox-item">
                                     <input type="checkbox" id="ch9">
                                     <label for="ch9">джемы</label>
                                 </div>
