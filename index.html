@@ -20,7 +20,7 @@
             <header>
                 <div class="flex">
                     <nav class="flex left-menu">
-                        <a href="/">
+                        <a href="index.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="154" height="64" viewBox="0 0 154 64">
                                 <g fill="#FFF">
                                     <path d="M59.3 42.76c-.84-.25-2.16.37-2.16.37s-3.03 2.5-17.84-.38c-10.9-2.13-16.58-1.92-16.58-1.92s1.83-12.5 1.33-16c0 0 0-.9-1.08-.9s-1.75.4-1.75 1 .16 4.4-.25 7.07c0 0-1.42 4.25-6.17 3.92s-5.75-3.75-6.17-6.1-.66-8.82.6-11.5c0 0 7.15.26 11.65-3.57s4.25-7.17 2.1-8.58S15.87 5 12.04 8.5s-5.08 7-5.08 7-5.63-1.2-4.34-7.08C3.98 2.28 12.4 3 12.4 3c1.74.33 1.82.5 2.4-.08s1-2.1-1.75-2.17S2.05 2.02.47 7.5c-1.7 5.83 1.43 10 5.62 10.64 0 0-2.3 10.1.53 15.1s6.94 4.93 8.6 4.93 4.57-.92 5.4-2.25c0 0-.4 3.58-.72 4.88 0 0-6.93-.1-9.1 1.03-3.7 1.92-2.92 6.48-1.5 8.1 1.2 1.4 4.8 2.13 7.42.9 2.7-1.27 4.86-3.74 5.55-7.7 0 0 6.36-.46 12.53 1.37s14.76 3.56 17.34 3.56 8.05-.74 8.33-2.9c.18-1.43-.34-2.15-1.18-2.4zM15.85 9.33s3.28-2.5 4.85-.94c0 0 1.26 1.27.1 2.8-.66.87-2.4 3.6-10.66 4.94 0 0 2.6-4.56 5.72-6.8zm.27 38.9s-4.53 2.47-5.05-.87c-.33-2.16.9-3.18 1.7-3.57s1.86-.9 6.57-.72c0 0 0 3.33-3.22 5.15z"
@@ -46,20 +46,39 @@
                         <a href="#">О Компании</a>
                     </nav>
                     <div class="flex right-menu">
-                        <div class="modal-group">
-                            <button class="btn search"></button>
-                            <button class="btn login">Вход</button>
-                            <button class="btn basket">Пусто</button>
+                        <div class="flex modal-group">
+                            <div class="search-form">
+                                <form action="search" method="get" name="search-panel">
+                                    <input type="text" name="search" placeholder="Что ищем?">
+                                </form>
+                                <button class="btn search"></button>
+                            </div>
+                            <div class="login-form">
+                                <form action="auth" method="get" name="authorization-form">
+                                    <input type="text" name="email" placeholder="Электронная почта">
+                                    <input type="password" name="password" placeholder="Пароль">
+                                    <section class="flex auth-link-wrapper">
+                                        <button class="btn-link">Войти</button>
+                                        <section class="auth-link-block">
+                                            <a href="#">Забыли пароль?</a>
+                                            <a href="#">Новая регистрация</a>
+                                        </section>
+                                    </section>
+                                </form>
+                                <button class="btn login">Вход</button>
+                            </div>
+                            <div class="basket-form">
+                                <form action="drop" method="get" name="basket-drop-form">
+
+                                </form>
+                                <button class="btn basket">Пусто</button>
+                            </div>
                         </div>
                         <div class="info">
                             <p>С 10 до 20, ежедневно</p>
                             <a href="tel:88124502525">8 812 450-25-25</a>
                         </div>
-                        <div class="search-form">
-                            <form action="search" method="get" name="search-panel">
-                                <input type="text" placeholder="Что ищем?">
-                            </form>
-                        </div>
+
                     </div>
                 </div>
             </header>
@@ -110,21 +129,33 @@
                         <img src="css/img/item1.png" alt="">
                         <span>310 &#8381; /кг</span>
                         <a href="#" class="item-description">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                        <div class="quick-view">
+                            <a href="#" class="btn-link">Быстрый просмотр</a>
+                        </div>
                     </div>
                     <div class="catalog-item hit">
                         <img src="css/img/item2.png" alt="">
                         <span>380 &#8381; /кг</span>
                         <a href="#" class="item-description">Сливочно-кофейное с кусочками шоколада</a>
+                        <div class="quick-view">
+                            <a href="#" class="btn-link">Быстрый просмотр</a>
+                        </div>
                     </div>
                     <div class="catalog-item hit">
                         <img src="css/img/item3.png" alt="">
                         <span>355 &#8381; /кг</span>
                         <a href="#" class="item-description">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                        <div class="quick-view">
+                            <a href="#" class="btn-link">Быстрый просмотр</a>
+                        </div>
                     </div>
                     <div class="catalog-item hit">
                         <img src="css/img/item4.png" alt="">
                         <span>415 &#8381; /кг</span>
                         <a href="#" class="item-description">Сливочное крем-брюле с карамельной подливкой</a>
+                        <div class="quick-view">
+                            <a href="#" class="btn-link">Быстрый просмотр</a>
+                        </div>
                     </div>
                 </div>
                 <div class="info-wrapper">

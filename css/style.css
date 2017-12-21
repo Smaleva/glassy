@@ -51,9 +51,23 @@ h2 {
     text-align: center;
     padding: 0 10px;
     width: 25%;
+    cursor: pointer;
+    min-height: 400px;
 }
 .catalog-item img {
     width: 100%;
+}
+.catalog-item .quick-view {
+    width: 100%;
+    height: 20%;
+    position: relative;
+}
+.quick-view .btn-link {
+    left: 10%;
+    bottom: 6%;
+}
+.quick-view {
+    display: none;
 }
 .info-wrapper {
     color: #323232;
@@ -139,7 +153,7 @@ h2 {
     border: 1px solid #d3d3d2;
     border-radius: 4px;
 }
-.search-form {
+form[name="search-panel"], form[name="authorization-form"], form[name="basket-drop-form"] {
     display: none;
 }
 .right-menu {
@@ -188,16 +202,24 @@ h2 {
     font-weight: bold;
 }
 .modal-group {
-    margin: 30px 10px;
+    padding: 30px 0;
+    width: 100%;
+    text-align: right;
+    justify-content: flex-end;
+    position: relative;
 }
-.modal-group button {
+.modal-group div {
+    width: 20%;
+    margin: 0 5px;
+    text-align: right;
+}
+.modal-group div>button {
     cursor: pointer;
     border: none;
     border-radius: 30px;
     background: rgba(255,255,255, 0.2);
-    margin: 0 5px;
     padding: 7px;
-    min-width: 98px;
+    width: 100%;
     min-height: 32px;
     vertical-align: middle;
     text-align: center;
@@ -212,11 +234,46 @@ h2 {
     border: 0;
     text-decoration: none;
     text-align: center;
+    cursor: pointer;
     background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
     box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);   
 }  
-button.search {
-    max-width: 33px;
+.search-form>.search {
+    width: 40%;
+}
+form[name="search-panel"] {
+    border-radius: 6px;
+    background: rgb(248, 247, 244);
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    padding: 12px;
+    top: 70%;
+    right: 45%;
+    min-width: 341px;
+}
+input[name="search"], input[name="email"], input[name="password"] {
+    border: 1px solid rgb(211, 211, 210);
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    min-height: 46px;
+    font-weight: normal;
+    padding: 14px;
+    font-size: small;
+}
+form[name="authorization-form"] {
+    border-radius: 6px;
+    background-color: rgb(248, 247, 244);
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    padding: 12px;
+    right: 22%;
+    top: 70%;
+    max-width: 277px;
+    min-height: 214px;
+}
+.search-form:hover > form[name="search-panel"], .login-form:hover > form[name="authorization-form"] {
+    display: block;
 }
 .search::before {
     content: "";
@@ -298,8 +355,8 @@ button.search {
     text-align: left;
     text-shadow: 0px 1px 3px #5a5b5d;
     position: absolute;
-    left: 0;
-    bottom: 15%;
+    left: 5%;
+    bottom: 33%;
 }
 .item-description {
     font-weight: normal;
@@ -480,4 +537,34 @@ button.submit {
 }
 .max {
     right: 35%;
+}
+
+/* hover styles */
+
+.catalog-item:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.catalog-item:hover > .quick-view {
+    display: block;
+}
+.btn-link:hover {
+    background: #f17d65;
+    background-image: none;
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+}
+.btn-link:active {
+    background: linear-gradient(to bottom,#f26843,#e74a35);
+    box-shadow: 0 2px 2px 0 #942718 inset;
+}
+.search:hover {
+    color: #000;
+    background-color: #f8f7f4;
+}
+.search::before:hover {
+    background: url('./img/sprites.png') 0 -186px no-repeat;
+}
+input:hover {
+    border: 2px solid rgb(154, 154, 154);
 }
