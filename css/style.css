@@ -160,11 +160,20 @@ form[name="search-panel"], form[name="authorization-form"], form[name="basket-dr
     flex-grow: 1;
     justify-content: flex-start;
 }
+.left-menu a:first-child {
+    padding: 10px 0 0;
+}
 .right-menu {
     flex-direction: column;
     align-items: flex-end;
     flex-grow: 1;
     text-align: right;
+}
+.auth-link-block a {
+    display: inline-block;
+    color: #323232;
+    font-weight: normal;
+    font-size: 13px;
 }
 .info {
     text-align: right;
@@ -183,6 +192,10 @@ form[name="search-panel"], form[name="authorization-form"], form[name="basket-dr
 }
 .menu a {
     padding: 10px;
+    font-size: 16px;
+    line-height: calc(18/16);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,.2);
 }
 .link-submenu {
     position: relative;
@@ -190,25 +203,42 @@ form[name="search-panel"], form[name="authorization-form"], form[name="basket-dr
 .submenu {
     position: absolute;
     display: none;
+    padding: 0;
     flex-direction: column;
     background: #f8f7f4;
-    left: 28.3%;
-    top: 2.5%;
+    left: 10%;
+    top: 40%;
     min-width: 144px;
-    border-radius: 3%;
+    border-radius: 5%;
     box-shadow: 0 0.5em 3em 0 rgba(0, 0, 0, 0.3);
+    z-index: 3;
+}
+.submenu li {
+    padding: 10px;
+}
+.submenu li>a {
+    color: #323232;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: calc(16/14);
+    border: none;
+}
+.submenu li:first-child {
+    border-bottom: 1px solid #d1d0ce;
+    font-weight: bolder;
 }
 .modal-group {
     padding: 30px 0;
     width: 100%;
     text-align: right;
-    justify-content: flex-end;
     position: relative;
 }
 .modal-group div {
-    width: 20%;
-    margin: 0 5px;
+    width: 26%;
+    padding: 0 3px;
     text-align: right;
+    display: inline-block;
 }
 .modal-group div>button {
     cursor: pointer;
@@ -245,7 +275,7 @@ form[name="search-panel"] {
     position: absolute;
     padding: 12px;
     top: 70%;
-    right: 45%;
+    right: 53%;
     min-width: 341px;
 }
 input[name="search"], input[name="email"], input[name="password"] {
@@ -264,13 +294,14 @@ form[name="authorization-form"] {
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
     position: absolute;
     padding: 12px;
-    right: 22%;
+    right: 26%;
     top: 70%;
     max-width: 277px;
     min-height: 214px;
 }
 .search-form:hover > form[name="search-panel"], .login-form:hover > form[name="authorization-form"] {
     display: block;
+    z-index: 3;
 }
 .search::before {
     content: "";
@@ -344,7 +375,7 @@ form[name="authorization-form"] {
     left: 64%;
     padding: 28px;
     background-color: #fdfefe;
-    z-index: 10;
+    z-index: 2;
 }
 .catalog-item span {
     font-size: 45px;
@@ -471,7 +502,7 @@ form[name="authorization-form"] {
 #product-3:checked ~ .site-wrapper label[for="product-3"] {
     background-color: #fff;
 }
-a.link-submenu:hover > .submenu {
+.link-submenu:hover > .submenu {
     display: flex;
 }
 .filter {
@@ -564,4 +595,11 @@ button.submit {
 }
 input:hover {
     border: 2px solid rgb(154, 154, 154);
+}
+.submenu li:hover {
+    background-color: rgb(251, 222, 215);
+    border-radius: 5%;
+}
+.submenu li:active {
+    background-color: rgb(246, 181, 165);
 }
