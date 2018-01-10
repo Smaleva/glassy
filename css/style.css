@@ -198,6 +198,11 @@ form[name="search-panel"], form[name="authorization-form"], form[name="basket-dr
     font-weight: normal;
     font-size: 13px;
 }
+.auth-link-wrapper button {
+    position: relative;
+    top: 0;
+    left: 0;
+}
 .info {
     text-align: right;
 }
@@ -266,7 +271,7 @@ form[name="search-panel"], form[name="authorization-form"], form[name="basket-dr
     text-align: right;
     position: relative;
 }
-.modal-group div {
+.search-form, .login-form, .basket-form {
     width: 26%;
     padding: 20px 3px;
     text-align: right;
